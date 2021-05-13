@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/kaeru" android:id="@+id/imageView"
+                    android:layout_weight="1" android:layout_gravity="bottom"/>
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/neko" android:id="@+id/imageView2"
+                    android:layout_weight="1" android:layout_gravity="bottom"/>
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/tako" android:id="@+id/imageView3"
+                    android:layout_weight="1" android:layout_gravity="bottom"/>
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/usagi" android:id="@+id/imageView4"
+                    android:layout_weight="1" android:layout_gravity="bottom"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:layout_weight="1" android:gravity="center">
+                <TextView
+                        android:text="なまえ"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/nameTextView" android:layout_weight="1"
+                        android:textSize="36sp" android:gravity="center"/>
+                <TextView
+                        android:text="食べ物"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/foodTextView" android:layout_weight="1"
+                        android:textSize="36sp" android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:layout_weight="1" android:gravity="center">
+                <TextView
+                        android:text="よそえました！"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" android:id="@+id/verbTextView" android:layout_weight="1"
+                        android:textSize="36sp" android:gravity="center"/>
+                <Button
+                        android:text="Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" android:id="@+id/button" android:layout_weight="1"
+                        android:textSize="36sp" android:gravity="center" android:onClick="serveFood"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
